@@ -78,12 +78,33 @@ Este repositório contém um desafio onde você deverá criar uma API REST em Ty
 ### Instalação:
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/RaiseIT-Identity/Test-Dev.git
 
 # Acesse a pasta do projeto
-cd nome-do-repositorio
+cd Test-Dev
 
 # Instale as dependências
 npm install
 # ou
 yarn install
+
+
+# Exemplo de Resposta do Endpoint /pokemons
+```json
+[
+  {
+    "name": "bulbasaur",
+    "height": 0.7,
+    "weight": 6.9,
+    "bmi": 14.08,
+    "category": "Médio"
+  },
+  {
+    "name": "charizard",
+    "height": 1.7,
+    "weight": 90.5,
+    "bmi": 31.28,
+    "category": "Pesado"
+  }
+]
+```
