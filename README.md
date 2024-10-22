@@ -90,7 +90,7 @@ yarn install
 ```
 ---
 
-## Exemplo de Resposta do Endpoint /pokemons
+## 📂 Exemplo de Resposta do Endpoint /pokemons
 ```json
 [
   {
@@ -108,4 +108,19 @@ yarn install
     "category": "Pesado"
   }
 ]
+```
+
+---
+## 📂 Estrutura do Projeto
+```csharp
+📦 Test-Dev
+├── src
+│   ├── api
+│   │   └── pokemonService.ts  # Funções para consumo da PokeAPI
+│   ├── routes
+│   │   └── pokemonRoutes.ts   # Definição das rotas da API
+│   ├── server.ts              # Configuração do servidor Express
+├── package.json
+├── README.md                  # Instruções do desafio
+└── EXPLICACAO.md              # Explicação do candidato
 ```
