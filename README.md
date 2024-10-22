@@ -88,8 +88,9 @@ npm install
 # ou
 yarn install
 
+---
 
-# Exemplo de Resposta do Endpoint /pokemons
+## Exemplo de Resposta do Endpoint /pokemons
 ```json
 [
   {
