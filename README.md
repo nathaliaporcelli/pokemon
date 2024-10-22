@@ -49,7 +49,6 @@ Este repositório contém um desafio onde você deverá criar uma API REST em Ty
     - Como desenvolveu a API.
     - Como realizou as conversões e o cálculo do IMC.
     - Quais foram os principais desafios encontrados.
-  - Durante a entrevista técnica, você poderá ser solicitado a modificar ou adicionar pequenos ajustes ao código para confirmar que compreende a solução desenvolvida.
 
 ---
 
@@ -111,7 +110,7 @@ yarn install
 ```
 
 ---
-## 📂 Estrutura do Projeto
+## 📂 Estrutura base do projeto
 ```csharp
 📦 Test-Dev
 ├── src
