@@ -1,6 +1,5 @@
 import express, { Request, Response } from 'express';
 import pokemonRoutes from './routes/pokemonRoutes'; 
-import pokemonFunction from './api/pokemonService'; 
 
 const app = express();
 const port = 3001;

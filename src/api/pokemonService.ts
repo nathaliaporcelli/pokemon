@@ -5,17 +5,16 @@ interface Pokemon {
     height: number;
     weight: number;
 }
-
-const apiUrl = 'https://pokeapi.co/api/v2/pokemon/1';
-
-
-const pokemonFunction = async (): Promise<void> => {
+ export const getOnePokemon = async (id:number): Promise<void> => {
+    const apiUrl = `https://pokeapi.co/api/v2/pokemon/${id}/`;
     try {
         const response = await axios.get<Pokemon>(apiUrl); 
         const { name, height, weight} = response.data
+
         let heightMeters = response.data.height/10
         let weightKg = response.data.weight/10
         let imc = weightKg/(heightMeters*heightMeters)
+
         console.log('Nome: ',name);
         console.log('Altura: ',heightMeters.toFixed(2)+ 'cm');
         console.log('Peso: ',weightKg.toFixed(2) + ' kg');
@@ -29,5 +28,13 @@ const pokemonFunction = async (): Promise<void> => {
     }
 };
 
-pokemonFunction();
-export default pokemonFunction
+export const getAllPokemons = async (counter: number): Promise<void> => {
+    for (let id = 1; id <= counter; id++) {
+        await getAllPokemons(id); 
+    }
+};
+
+getOnePokemon(1)
+
+
+

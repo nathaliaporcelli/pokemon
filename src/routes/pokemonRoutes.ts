@@ -1,9 +1,10 @@
 import { Router } from 'express';
-import pokemonFunction from '../api/pokemonService';
+import {getOnePokemon , getAllPokemons} from '../api/pokemonService';
+
 
 const router = Router();
 
-// Ajuste a rota para incluir um parâmetro dinâmico
-router.get('/pokemon', pokemonFunction);
+router.get('/pokemon', getOnePokemon);
+router.get('/pokemons', getAllPokemons);
 
 export default router;
