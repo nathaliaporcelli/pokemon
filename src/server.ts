@@ -6,7 +6,7 @@ const port = 3001;
 
 app.use(express.json());
 
-app.use('/api', pokemonRoutes); 
+app.use(pokemonRoutes); 
 app.get('/', (request: Request, response: Response) => {
     response.send('Bem vindo a poke api');
 });

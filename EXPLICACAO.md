@@ -1,14 +1,17 @@
-instalação
-yarn add -D typescript @types/node @types/express ts-node-dev
+- instalação das dependencias do projeto com npm install
 
-yarn add express
+configuração do servidor express para apresentar os resultados no navegador
 
-./node_modules/.bin/tsc --init
+app.use(express.json()) utilizado para o navegador entender objetos em formato json.
+configurado o arquivo de rotas para apresentar corretamente as rotas configuradas no arquivo pokemonRoutes.
+Configurada a rota padrão com uma mensagem para informar que a api está funcionando.
 
-npm install node-fetch
+Parte 1 - Consumo da API
 
-Ajustamos o package.json para executar o nodemon com o ts-node-dev
+Criação de interface para gerenciar os dados dos pokemons com os campos necessários.
 
-"scripts": {
-    "dev": "nodemon --exec ts-node-dev src/server.ts"
-  },
+utiizando o axios com fun
+
+
+
+
